@@ -384,6 +384,7 @@ button {
     align-items: center; /* Center items vertically */
     gap: 15px; /* Increased space between image and text */
     justify-content: center; /* Center content horizontally */
+    text-decoration: none;
     
 }
 
@@ -395,9 +396,12 @@ button {
 
 /* Style the text inside the button */
 .button-text {
+    color: white;
     display: flex;
     align-items: center; /* Center align text and icon vertically */
     gap: 8px; /* Increased space between text and small icon */
+    text-decoration: none;
+    outline: none;
 }
 
 /* Style the small icon for "Unstop" */
@@ -415,13 +419,17 @@ button:hover {
 /* Add focus styles for accessibility */
 button:focus {
     outline: 3px solid rgb(255, 255, 255); /* White outline for focus state */
-    outline-offset: 2px; /* Offset the outline from the button */
+    color: white;
+    outline: none; /* Offset the outline from the button */
+    text-decoration: none;
 }
 
 /* Add active styles for button press */
 button:active {
     background-color: #0073ff; /* Even darker orange when pressed */
     transform: scale(1); /* Reset scale */
+    outline: none;
+    text-decoration: none;
 }
 .highlight {
     position: relative;
