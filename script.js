@@ -84,13 +84,13 @@ function adjustTimerSectionStyles() {
 }
 
 function startCountdown() {
-    const deadline = new Date('2024-08-31T23:59:59').getTime(); // Set your deadline date and time here
+    const deadline = new Date('2024-10-10T23:59:59').getTime(); // Set your deadline date and time here
 
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = deadline - now;
 
-        if (distance < 0) {
+        if (distance == 0) {
             document.getElementById('days').innerHTML = '00';
             document.getElementById('hours').innerHTML = '00';
             document.getElementById('minutes').innerHTML = '00';
@@ -114,7 +114,7 @@ function startCountdown() {
     }
 
     updateCountdown(); // Run once at the start
-    setInterval(updateCountdown, 1000); // Update every second
+    setInterval(updateCountdown, .1000); // Update every second
 }
 
 // Ensure the countdown starts when the page has fully loaded
@@ -127,7 +127,6 @@ window.addEventListener('load', function() {
     adjustButtonStyles();
     adjustTimerSectionStyles();
 });
-
 window.addEventListener('resize', function() {
     adjustTextStyles();
     adjustButtonStyles();
