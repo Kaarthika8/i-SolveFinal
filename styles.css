@@ -367,6 +367,11 @@ nav ul li :hover {
     text-align: center; /* Center text and inline elements */
 }
 
+.unstop_link{
+    text-decoration: none;
+    outline: none;
+}
+
 /* Button Styles */
 button {
     background-color:rgb(16, 22, 48); /* Bright orange background color */
